@@ -6,12 +6,12 @@ for(i=[0:60:300])
     rotate([0,0,i])translate([3,-0.75,0])
     cube(size=[22,1.5,15]);
 } 
-cylinder(d=16,h=22,$fn=60);
+cylinder(d=16,h=15,$fn=60);
 }
 translate([0,0,-1])cylinder(d=3,h=24,$fn=30);
 }
 rotate([0,0,30])translate([1,-2,0])
-cube(size=[2,4,22]);
+cube(size=[2,4,15]);
 
 translate([0,0,16])rotate([0,90,0])
 {
