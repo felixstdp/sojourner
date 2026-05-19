@@ -4,7 +4,7 @@ union()
 for(i=[0:60:300])
 {
     rotate([0,0,i])translate([3,-0.75,0])
-    cube(size=[15,1.5,15]);
+    cube(size=[22,1.5,15]);
 } 
 cylinder(d=16,h=22,$fn=60);
 }
@@ -15,10 +15,16 @@ cube(size=[2,4,22]);
 
 translate([0,0,16])rotate([0,90,0])
 {
+rotate([0,90,0])
+difference(){
+cylinder(r=25.5,h=32,center=true,$fn=60);
+cylinder(r=24,h=36,center=true,$fn=60);
+}
+
 for(i=[0:45:315]){
 rotate([i,0,0])
 for(j=[-11:4:15]){
-translate([j,0,18])
+translate([j,0,25])
 cylinder(d1=4,d2=0,h=2,$fn=18);
 }
 }
@@ -28,14 +34,9 @@ mirror([1,0,0])
 for(i=[0:45:315]){
 rotate([i,0,0])
 for(j=[-11:4:15]){
-translate([j,0,18])
+translate([j,0,25])
 cylinder(d1=4,d2=0,h=2,$fn=18);
 }
 }
 
-rotate([0,90,0])
-difference(){
-cylinder(r=18.5,h=32,center=true,$fn=60);
-cylinder(r=16.5,h=36,center=true,$fn=60);
-}
 }
