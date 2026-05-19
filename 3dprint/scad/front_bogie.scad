@@ -1,6 +1,9 @@
+translate([-4,10,0])cube([8,25.35,8]);
+translate([0,35.35,0])cylinder(d=8,h=8,$fn=60);
+rotate([0,0,180])wheel_bracket();
+
 translate([0,35.35,0])rotate([0,0,30])
 translate([0,-4,0])cube([70,8,8]);
-
 translate([135.35/2,35.35+39.07,0])
 difference(){
 cylinder(d=18,h=12,$fn=60);
@@ -9,16 +12,11 @@ translate([0,0,-1])cylinder(d=5.9,h=20,$fn=30);
 
 translate([135.35,35.35,0])rotate([0,0,150])
 translate([8,-4,0])cube([65,8,8]);
-
 translate([135.35,35.35,0])
 difference(){
-cylinder(d=18,h=12,$fn=60);
+cylinder(d=18,h=8,$fn=60);
 translate([0,0,-1])cylinder(d=5.9,h=20,$fn=30);
 }
-
-translate([-4,10,0])cube([8,25.35,8]);
-translate([0,35.35,0])cylinder(d=8,h=8,$fn=60);
-rotate([0,0,180])wheel_bracket();
 
 module wheel_bracket(){
     difference(){
