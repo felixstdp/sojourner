@@ -1,7 +1,4 @@
 translate([43.35,31.35,0])cube([56.65,8,8]);
-translate([100,35.35,0])
-cylinder(d=8,h=8,$fn=60);
-
 
 rotate([0,0,-45])
 {
@@ -17,6 +14,7 @@ rotate([0,0,180])wheel_bracket();
 translate([100,0,0])
 {
 translate([-4,10,0])cube([8,25.35,8]);
+translate([0,35.35,0])cylinder(d=8,h=8,$fn=60);
 rotate([0,0,180])wheel_bracket();
 }
 
