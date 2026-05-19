@@ -1,9 +1,17 @@
-frontbogie();
-translate([100,0,9])rearbogie();
-translate([0,0,49])mirror([0,0,1])frontwheel();
-translate([100,0,49])mirror([0,0,1])wheel();
-translate([200,0,49])mirror([0,0,1])wheel();
+translate([0,0,50])frontbogie();
+translate([100,0,59])rearbogie();
+translate([0,0,99])mirror([0,0,1])frontwheel();
+translate([100,0,99])mirror([0,0,1])wheel();
+translate([200,0,99])mirror([0,0,1])wheel();
 
+
+mirror([0,0,1]){
+translate([0,0,50])frontbogie();
+translate([100,0,59])rearbogie();
+translate([0,0,99])mirror([0,0,1])frontwheel();
+translate([100,0,99])mirror([0,0,1])wheel();
+translate([200,0,99])mirror([0,0,1])wheel();
+}
 
 module frontbogie(){
 translate([-4,10,0])cube([8,25.35,8]);
