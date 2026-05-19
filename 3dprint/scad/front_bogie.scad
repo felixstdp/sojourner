@@ -13,10 +13,10 @@ translate([0,0,-1])cylinder(d=5.9,h=20,$fn=30);
 translate([135.35/2-4,35.35+39.07+4,0])
 difference(){
 union(){
-cube([8,30,8]);
-translate([4,30,0])cylinder(d=8,h=8,$fn=30);
+cube([8,20,8]);
+translate([4,20,0])cylinder(d=8,h=8,$fn=30);
 }
-translate([-2,30,4])
+translate([-2,18,4])
 rotate([0,90,0])
 cylinder(d=3,h=12,$fn=12);
 }
