@@ -1,3 +1,5 @@
+rotate([90,0,0])
+{
 translate([0,0,50])frontbogie();
 translate([100,0,59])rearbogie();
 translate([0,0,99])mirror([0,0,1])frontwheel();
@@ -11,6 +13,7 @@ translate([100,0,59])rearbogie();
 translate([0,0,99])mirror([0,0,1])frontwheel();
 translate([100,0,99])mirror([0,0,1])wheel();
 translate([200,0,99])mirror([0,0,1])wheel();
+}
 }
 
 module frontbogie(){
