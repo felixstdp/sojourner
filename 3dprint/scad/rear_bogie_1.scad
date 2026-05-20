@@ -1,23 +1,19 @@
-translate([43.35,31.35,0])cube([56.65,8,8]);
+rotate([0,0,180])wheel_bracket();
 
-rotate([0,0,-45])
-{
-translate([0,50,0])
 difference(){
-cylinder(d=18,h=8,$fn=60);
-translate([0,0,-1])cylinder(d=5.9,h=20,$fn=30);
-}
-translate([-4,10,0])cube([8,35,8]);
-rotate([0,0,180])wheel_bracket();
-}
-
-translate([100,0,0])
-{
+union(){
 translate([-4,10,0])cube([8,25.35,8]);
-translate([0,35.35,0])cylinder(d=8,h=8,$fn=60);
-rotate([0,0,180])wheel_bracket();
+translate([0,35.35,0])cylinder(d=8,h=9,$fn=60);
+translate([0,35.35,0])rotate([0,0,23.2])
+translate([0,-4,0])cube([15,8,9]);
+translate([0,35.35,0])rotate([0,0,23.2])
+translate([15,0,0])cylinder(d=8,h=9,$fn=60);
 }
-
+translate([0,35.35,-1])cylinder(d=3,h=11,$fn=60);
+translate([0,35.35,-1])
+rotate([0,0,23.2])translate([15,0,0])
+cylinder(d=3,h=11,$fn=60);
+}
 
 module wheel_bracket(){
     difference(){
