@@ -7,4 +7,4 @@ Ficheros stl para imprimir
 - front wheel es la rueda delantera, imprimir dos unidades.
 - wheel es la rueda central y trasera, imprimir cuatro unidades.
 - front bogie es el balancín frontal, imprimir una unidad tal cual y una reflejada a espejo.
-- rear bogie es el balancín trasero, imprimir una unidad tal cual y una reflejada a espejo.
+- rear bogie (2 partes) es el balancín trasero, imprimir una unidad tal cual y una reflejada a espejo.
