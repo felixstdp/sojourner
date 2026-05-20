@@ -1,7 +1,7 @@
 # sojourner
 Modelo a escala del rover Sojourner de la Nasa en Marte
 
-https://github.com/felixstdp/sojourner/blob/main/sojourner.jpg
+!(https://github.com/felixstdp/sojourner/blob/main/sojourner.jpg)
 
 Ficheros stl para imprimir
 
