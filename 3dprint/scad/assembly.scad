@@ -1,3 +1,9 @@
+%translate([0,-75,97.5])cube([200,150,3]);
+%translate([30,-47,57.5])difference(){
+cube([140,94,40]);
+translate([120,-1,20])cube([21,100,21]);
+}
+
 rotate([90,0,0])
 {
 translate([0,0,50])rearbogie1();
@@ -18,6 +24,7 @@ translate([200,0,90])mirror([0,0,1])wheel();
 translate([67.68,65,47])chassis();
 }
 } 
+translate([10,0,84])stabilizing_bar();
 
 module rearbogie1(){
 rotate([0,0,180])wheel_bracket();
@@ -242,5 +249,25 @@ translate([23,0,6])rotate([-90,0,0])
 cylinder(d=3,h=50,$fn=12);
 translate([-23,0,6])rotate([-90,0,0])
 cylinder(d=3,h=50,$fn=12);
+}
+}
+
+module stabilizing_bar(){
+difference(){
+union(){
+hull()
+{
+translate([-4,64,4])rotate([0,90,0])
+cylinder(d=8,h=8,$fn=24);
+translate([-4,-64,4])rotate([0,90,0])
+cylinder(d=8,h=8,$fn=24);
+}
+cylinder(d=18,h=12,$fn=60);
+}
+translate([-5,64,4])rotate([0,90,0])
+cylinder(d=3,h=10,$fn=24);
+translate([-5,-64,4])rotate([0,90,0])
+cylinder(d=3,h=10,$fn=24);
+translate([0,0,-1])cylinder(d=5.9,h=20,$fn=30);
 }
 }
