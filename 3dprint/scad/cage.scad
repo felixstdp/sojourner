@@ -10,6 +10,11 @@ translate([0,84,0])cube([10,10,40]);
 translate([110,84,0])cube([10,10,40]);
 translate([110,0,0])cube([10,10,40]);
 }
+translate([1.5,1.5,-1])cube([10,10,30]);
+translate([1.5,82.5,-1])cube([10,10,30]);
+translate([108.5,82.5,-1])cube([10,10,30]);
+translate([108.5,1.5,-1])cube([10,10,30]);
+
 translate([5,5,30])cylinder(d=3,h=12,$fn=12);
 translate([5,89,30])cylinder(d=3,h=12,$fn=12);
 translate([115,5,30])cylinder(d=3,h=12,$fn=12);
