@@ -13,5 +13,5 @@ translate([-5,64,4])rotate([0,90,0])
 cylinder(d=3,h=10,$fn=24);
 translate([-5,-64,4])rotate([0,90,0])
 cylinder(d=3,h=10,$fn=24);
-translate([0,0,-1])cylinder(d=5.9,h=20,$fn=30);
+translate([0,0,-1])cylinder(d=3,h=20,$fn=30);
 }
