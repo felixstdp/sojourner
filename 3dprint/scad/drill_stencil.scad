@@ -1,14 +1,16 @@
-translate([0,0,-93])
+translate([0,0,-95])
 difference(){
 union(){
 translate([10,0,84])stabilizing_bar();
 chassis_cage();
 }
-translate([0,-100,0])cube([300,200,93]);
+translate([0,-100,0])cube([300,200,95]);
 }
 
-translate([12,-5,0])cube([19,10,4]);
-translate([90,-47,0])cube([10,94,4]);
+translate([12,-6,0])cube([19,12,2]);
+translate([31,-47,0])cube([110,94,2]);
+translate([31,-40,0])cube([118,80,2]);
+
 
 module chassis_cage(){
 translate([30,-47,57])
