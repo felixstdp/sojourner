@@ -1,4 +1,6 @@
+difference(){
 translate([0,0,-95])
+union(){
 difference(){
 union(){
 translate([10,0,84])stabilizing_bar();
@@ -6,11 +8,12 @@ chassis_cage();
 }
 translate([0,-100,0])cube([300,200,95]);
 }
-
-translate([12,-6,0])cube([19,12,2]);
-translate([31,-47,0])cube([110,94,2]);
-translate([31,-40,0])cube([118,80,2]);
-
+translate([12,-6,95])cube([19,12,2]);
+translate([31,-47,95])cube([110,94,2]);
+translate([31,-40,95])cube([118,80,2]);
+}
+translate([45,-35,-1])cube([90,70,100]);
+}
 
 module chassis_cage(){
 translate([30,-47,57])
