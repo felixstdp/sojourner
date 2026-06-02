@@ -17,8 +17,8 @@ union(){
 translate([110,84,0])cube([10,10,40]);
 translate([110,0,0])cube([10,10,40]);
 }
-translate([108.5,82.5,-1])cube([10,10,32]);
-translate([108.5,1.5,-1])cube([10,10,32]);
+translate([108.5,82.5,-1])cube([10,10,34]);
+translate([108.5,1.5,-1])cube([10,10,34]);
 
 translate([115,5,28])cylinder(d=3,h=14,$fn=12);
 translate([115,89,28])cylinder(d=3,h=14,$fn=12);
