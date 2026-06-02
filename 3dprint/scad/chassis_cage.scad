@@ -12,9 +12,6 @@ translate([67.68,65,-100])rotate([0,0,-90])
 cylinder(d=28,h=200,$fn=3);
 }
 
-//rotate([90,0,0])translate([67.68,65,-100])
-//cylinder(d=6.1,h=200,$fn=30);
-
 difference(){
 union(){
 translate([110,84,0])cube([10,10,40]);
