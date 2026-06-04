@@ -12,4 +12,8 @@ Ficheros stl para imprimir
 - stabilizing_bar es la barra de equilibrio, imprimir una unidad.
 - rod es la biela, imprimir dos unidades.
 - chassis_cage es el chasis-caja, imprimir una unidad.
+
+Además de las piezas para montar, hay dos herrammientas para el montaje:
+
 - drill_stencil es la plantilla para taladrar, imprimir una unidad.
+- motor_insert_tool es un soporte temporal para sujetar el motor N20 mientras se inserta la rueda en su eje.
