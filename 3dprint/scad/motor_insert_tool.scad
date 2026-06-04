@@ -5,13 +5,13 @@ translate([0,50,0])cylinder(d=15,h=8,$fn=60);
 
 module wheel_bracket(){
     difference(){
-translate([-8,-11,0])cube([16,22,20]);
+translate([-8,-11,0])cube([16,22,22]);
 difference(){
-    translate([0,0,-1])cylinder(d=12.2,h=25,$fn=60);
+    translate([0,0,-1])cylinder(d=12.2,h=20,$fn=60);
     translate([6.1,0,-1])cube([2,20,50],center=true);
     translate([-6.1,0,-1])cube([2,20,50],center=true);
 }
-translate([-1,0,-1])cube([2,22,25]);
+translate([-1,0,-1])cube([2,22,20]);
 translate([-9,8,7.5])rotate([0,90,0])
 cylinder(d=2.2,h=21,$fn=12);
 translate([-9,8,7.5])rotate([0,90,0])
